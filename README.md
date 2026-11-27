@@ -1,24 +1,27 @@
-# Hola! Welcome
+# Taxio
 
-ola
+Aplicativo de pedido de táxi, feito para telemóvel (também abre no computador dentro de uma moldura de telemóvel).
 
-This project was built with [Lovable](https://lovable.dev).
+Construído com [Lovable](https://lovable.dev) · TanStack Start, React 19, Tailwind 4.
 
-## Build with Lovable
+## Fluxo de telas
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/3a280588-ecfe-4984-bf73-d42d747856ae).
+Abertura → boas-vindas → apresentação (3 passos) → entrar / criar conta → perfil → PIN → impressão digital → localização → mapa com táxis por perto → pesquisa de destino → detalhes do local → notificações.
+Há ainda a recuperação de palavra-passe (escolha do método → código → nova palavra-passe).
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+## Estado atual
 
-## Development
+- Tudo funciona no navegador, sem servidor: o perfil e a localização ficam guardados em `localStorage`.
+- O mapa é um desenho estilizado (`src/components/app/map.tsx`), não um mapa real. Os táxis são animados e fictícios.
+- Os locais de pesquisa (`src/lib/places.ts`) são pontos de referência de Luanda com coordenadas aproximadas. A distância é em linha reta.
+- O PIN, a impressão digital e o código de recuperação não são validados: ainda não há conta nem servidor.
+- “Ver direções” abre o Google Maps com o destino.
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+## Desenvolvimento
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+bun install
+bun run dev
 ```
+
+Outros comandos: `bun run build`, `bun run lint`, `bun run test`.

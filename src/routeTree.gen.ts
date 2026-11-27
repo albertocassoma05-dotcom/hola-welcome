@@ -10,33 +10,245 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BoasVindasRouteImport } from './routes/boas-vindas'
+import { Route as BuscarRouteImport } from './routes/buscar'
+import { Route as CadastroRouteImport } from './routes/cadastro'
+import { Route as DetalhesRouteImport } from './routes/detalhes'
+import { Route as DigitalRouteImport } from './routes/digital'
+import { Route as EntrarRouteImport } from './routes/entrar'
+import { Route as InicioRouteImport } from './routes/inicio'
+import { Route as LocalizacaoRouteImport } from './routes/localizacao'
+import { Route as LoginRouteImport } from './routes/login'
+import { Route as NotificacoesRouteImport } from './routes/notificacoes'
+import { Route as NovaSenhaRouteImport } from './routes/nova-senha'
+import { Route as OnboardingRouteImport } from './routes/onboarding'
+import { Route as PerfilRouteImport } from './routes/perfil'
+import { Route as PinRouteImport } from './routes/pin'
+import { Route as RecuperarRouteImport } from './routes/recuperar'
+import { Route as RecuperarCodigoRouteImport } from './routes/recuperar-codigo'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BoasVindasRoute = BoasVindasRouteImport.update({
+  id: '/boas-vindas',
+  path: '/boas-vindas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BuscarRoute = BuscarRouteImport.update({
+  id: '/buscar',
+  path: '/buscar',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CadastroRoute = CadastroRouteImport.update({
+  id: '/cadastro',
+  path: '/cadastro',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DetalhesRoute = DetalhesRouteImport.update({
+  id: '/detalhes',
+  path: '/detalhes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DigitalRoute = DigitalRouteImport.update({
+  id: '/digital',
+  path: '/digital',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EntrarRoute = EntrarRouteImport.update({
+  id: '/entrar',
+  path: '/entrar',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InicioRoute = InicioRouteImport.update({
+  id: '/inicio',
+  path: '/inicio',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LocalizacaoRoute = LocalizacaoRouteImport.update({
+  id: '/localizacao',
+  path: '/localizacao',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LoginRoute = LoginRouteImport.update({
+  id: '/login',
+  path: '/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NotificacoesRoute = NotificacoesRouteImport.update({
+  id: '/notificacoes',
+  path: '/notificacoes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NovaSenhaRoute = NovaSenhaRouteImport.update({
+  id: '/nova-senha',
+  path: '/nova-senha',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OnboardingRoute = OnboardingRouteImport.update({
+  id: '/onboarding',
+  path: '/onboarding',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PerfilRoute = PerfilRouteImport.update({
+  id: '/perfil',
+  path: '/perfil',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PinRoute = PinRouteImport.update({
+  id: '/pin',
+  path: '/pin',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RecuperarRoute = RecuperarRouteImport.update({
+  id: '/recuperar',
+  path: '/recuperar',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RecuperarCodigoRoute = RecuperarCodigoRouteImport.update({
+  id: '/recuperar-codigo',
+  path: '/recuperar-codigo',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/boas-vindas': typeof BoasVindasRoute
+  '/buscar': typeof BuscarRoute
+  '/cadastro': typeof CadastroRoute
+  '/detalhes': typeof DetalhesRoute
+  '/digital': typeof DigitalRoute
+  '/entrar': typeof EntrarRoute
+  '/inicio': typeof InicioRoute
+  '/localizacao': typeof LocalizacaoRoute
+  '/login': typeof LoginRoute
+  '/notificacoes': typeof NotificacoesRoute
+  '/nova-senha': typeof NovaSenhaRoute
+  '/onboarding': typeof OnboardingRoute
+  '/perfil': typeof PerfilRoute
+  '/pin': typeof PinRoute
+  '/recuperar': typeof RecuperarRoute
+  '/recuperar-codigo': typeof RecuperarCodigoRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/boas-vindas': typeof BoasVindasRoute
+  '/buscar': typeof BuscarRoute
+  '/cadastro': typeof CadastroRoute
+  '/detalhes': typeof DetalhesRoute
+  '/digital': typeof DigitalRoute
+  '/entrar': typeof EntrarRoute
+  '/inicio': typeof InicioRoute
+  '/localizacao': typeof LocalizacaoRoute
+  '/login': typeof LoginRoute
+  '/notificacoes': typeof NotificacoesRoute
+  '/nova-senha': typeof NovaSenhaRoute
+  '/onboarding': typeof OnboardingRoute
+  '/perfil': typeof PerfilRoute
+  '/pin': typeof PinRoute
+  '/recuperar': typeof RecuperarRoute
+  '/recuperar-codigo': typeof RecuperarCodigoRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/boas-vindas': typeof BoasVindasRoute
+  '/buscar': typeof BuscarRoute
+  '/cadastro': typeof CadastroRoute
+  '/detalhes': typeof DetalhesRoute
+  '/digital': typeof DigitalRoute
+  '/entrar': typeof EntrarRoute
+  '/inicio': typeof InicioRoute
+  '/localizacao': typeof LocalizacaoRoute
+  '/login': typeof LoginRoute
+  '/notificacoes': typeof NotificacoesRoute
+  '/nova-senha': typeof NovaSenhaRoute
+  '/onboarding': typeof OnboardingRoute
+  '/perfil': typeof PerfilRoute
+  '/pin': typeof PinRoute
+  '/recuperar': typeof RecuperarRoute
+  '/recuperar-codigo': typeof RecuperarCodigoRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/boas-vindas'
+    | '/buscar'
+    | '/cadastro'
+    | '/detalhes'
+    | '/digital'
+    | '/entrar'
+    | '/inicio'
+    | '/localizacao'
+    | '/login'
+    | '/notificacoes'
+    | '/nova-senha'
+    | '/onboarding'
+    | '/perfil'
+    | '/pin'
+    | '/recuperar'
+    | '/recuperar-codigo'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/boas-vindas'
+    | '/buscar'
+    | '/cadastro'
+    | '/detalhes'
+    | '/digital'
+    | '/entrar'
+    | '/inicio'
+    | '/localizacao'
+    | '/login'
+    | '/notificacoes'
+    | '/nova-senha'
+    | '/onboarding'
+    | '/perfil'
+    | '/pin'
+    | '/recuperar'
+    | '/recuperar-codigo'
+  id:
+    | '__root__'
+    | '/'
+    | '/boas-vindas'
+    | '/buscar'
+    | '/cadastro'
+    | '/detalhes'
+    | '/digital'
+    | '/entrar'
+    | '/inicio'
+    | '/localizacao'
+    | '/login'
+    | '/notificacoes'
+    | '/nova-senha'
+    | '/onboarding'
+    | '/perfil'
+    | '/pin'
+    | '/recuperar'
+    | '/recuperar-codigo'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BoasVindasRoute: typeof BoasVindasRoute
+  BuscarRoute: typeof BuscarRoute
+  CadastroRoute: typeof CadastroRoute
+  DetalhesRoute: typeof DetalhesRoute
+  DigitalRoute: typeof DigitalRoute
+  EntrarRoute: typeof EntrarRoute
+  InicioRoute: typeof InicioRoute
+  LocalizacaoRoute: typeof LocalizacaoRoute
+  LoginRoute: typeof LoginRoute
+  NotificacoesRoute: typeof NotificacoesRoute
+  NovaSenhaRoute: typeof NovaSenhaRoute
+  OnboardingRoute: typeof OnboardingRoute
+  PerfilRoute: typeof PerfilRoute
+  PinRoute: typeof PinRoute
+  RecuperarRoute: typeof RecuperarRoute
+  RecuperarCodigoRoute: typeof RecuperarCodigoRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +260,139 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/boas-vindas': {
+      id: '/boas-vindas'
+      path: '/boas-vindas'
+      fullPath: '/boas-vindas'
+      preLoaderRoute: typeof BoasVindasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/buscar': {
+      id: '/buscar'
+      path: '/buscar'
+      fullPath: '/buscar'
+      preLoaderRoute: typeof BuscarRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cadastro': {
+      id: '/cadastro'
+      path: '/cadastro'
+      fullPath: '/cadastro'
+      preLoaderRoute: typeof CadastroRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/detalhes': {
+      id: '/detalhes'
+      path: '/detalhes'
+      fullPath: '/detalhes'
+      preLoaderRoute: typeof DetalhesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/digital': {
+      id: '/digital'
+      path: '/digital'
+      fullPath: '/digital'
+      preLoaderRoute: typeof DigitalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/entrar': {
+      id: '/entrar'
+      path: '/entrar'
+      fullPath: '/entrar'
+      preLoaderRoute: typeof EntrarRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/inicio': {
+      id: '/inicio'
+      path: '/inicio'
+      fullPath: '/inicio'
+      preLoaderRoute: typeof InicioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/localizacao': {
+      id: '/localizacao'
+      path: '/localizacao'
+      fullPath: '/localizacao'
+      preLoaderRoute: typeof LocalizacaoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/login': {
+      id: '/login'
+      path: '/login'
+      fullPath: '/login'
+      preLoaderRoute: typeof LoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/notificacoes': {
+      id: '/notificacoes'
+      path: '/notificacoes'
+      fullPath: '/notificacoes'
+      preLoaderRoute: typeof NotificacoesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nova-senha': {
+      id: '/nova-senha'
+      path: '/nova-senha'
+      fullPath: '/nova-senha'
+      preLoaderRoute: typeof NovaSenhaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/onboarding': {
+      id: '/onboarding'
+      path: '/onboarding'
+      fullPath: '/onboarding'
+      preLoaderRoute: typeof OnboardingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/perfil': {
+      id: '/perfil'
+      path: '/perfil'
+      fullPath: '/perfil'
+      preLoaderRoute: typeof PerfilRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pin': {
+      id: '/pin'
+      path: '/pin'
+      fullPath: '/pin'
+      preLoaderRoute: typeof PinRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/recuperar': {
+      id: '/recuperar'
+      path: '/recuperar'
+      fullPath: '/recuperar'
+      preLoaderRoute: typeof RecuperarRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/recuperar-codigo': {
+      id: '/recuperar-codigo'
+      path: '/recuperar-codigo'
+      fullPath: '/recuperar-codigo'
+      preLoaderRoute: typeof RecuperarCodigoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BoasVindasRoute: BoasVindasRoute,
+  BuscarRoute: BuscarRoute,
+  CadastroRoute: CadastroRoute,
+  DetalhesRoute: DetalhesRoute,
+  DigitalRoute: DigitalRoute,
+  EntrarRoute: EntrarRoute,
+  InicioRoute: InicioRoute,
+  LocalizacaoRoute: LocalizacaoRoute,
+  LoginRoute: LoginRoute,
+  NotificacoesRoute: NotificacoesRoute,
+  NovaSenhaRoute: NovaSenhaRoute,
+  OnboardingRoute: OnboardingRoute,
+  PerfilRoute: PerfilRoute,
+  PinRoute: PinRoute,
+  RecuperarRoute: RecuperarRoute,
+  RecuperarCodigoRoute: RecuperarCodigoRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
